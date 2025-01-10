@@ -1,7 +1,5 @@
-import java.util.Scanner;
-import java.util.Locale;
-
 public class CaixaEletronico {
+    
     public static void main(String[] args) {
 
         double saldo = 25.0;
