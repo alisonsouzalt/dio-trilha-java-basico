@@ -8,7 +8,7 @@ public class App {
         Calculadora calc = new Calculadora();
 
         while (true) {
-    
+            
             System.out.println("Digite a primeira nota do aluno:");
             double nota1 = scanner.nextDouble();
             System.out.println("Digite a segunda nota do aluno:");
@@ -39,6 +39,7 @@ public class App {
             }
         
         }
+        
     }
 
 }
