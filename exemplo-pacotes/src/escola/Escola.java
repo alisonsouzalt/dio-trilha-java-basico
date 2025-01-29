@@ -8,6 +8,7 @@ public class Escola {
         felipe.setIdade(14);
         felipe.setSexo("M");
 
-        System.out.println("O aluno " + felipe.getNome() + " tem " + felipe.getIdade());
+
+        System.out.println("O aluno " + felipe.getNome() + " tem " + felipe.getIdade() + " anos " + "do sexo " + felipe.getSexo());
     }
 }
