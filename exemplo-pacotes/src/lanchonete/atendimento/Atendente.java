@@ -2,7 +2,7 @@ package lanchonete.atendimento;
 
 public class Atendente {
     public void servindoMesa(){
-    	pegarLancheCozinha();
+        pegarLancheCozinha();
         System.out.println("SERVINDO MESA");
     }
     private void pegarLancheCozinha(){
