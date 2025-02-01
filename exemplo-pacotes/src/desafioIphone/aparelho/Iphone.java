@@ -3,6 +3,7 @@ package desafioIphone.aparelho;
 import java.util.Locale;
 import java.util.Scanner;
 import desafioIphone.aparelho.funcoes.AparelhoTelefonico;
+import desafioIphone.aparelho.funcoes.Menu;
 import desafioIphone.aparelho.funcoes.NavegadorInternet;
 import desafioIphone.aparelho.funcoes.ReprodutorMusical;
 
@@ -13,19 +14,13 @@ public class Iphone {
         AparelhoTelefonico ap = new AparelhoTelefonico();
         NavegadorInternet nav = new NavegadorInternet();
         ReprodutorMusical rep = new ReprodutorMusical();
+        Menu menu = new Menu();
 
         /// SELEÇÃO DE FUNCÇOES
-        System.out.println("## LIGANDO APARELHO...##");
-        System.out.println("## APARELHO LIGADO ##\n");
-        System.out.println("Escolha uma função abaixo:");
-        System.out.println("1. Sistema Telefonico");
-        System.out.println("2. Navegar na Internet");
-        System.out.println("3. Reproduzir Música");
+        menu.menu();
 
         int escolha = scanner.nextInt();
-        String numero;
-        String pagina;
-        String musica;
+        String numero, musica, pagina;
 
         if(escolha == 1){
             System.out.println("Escolha uma função abaixo:");
