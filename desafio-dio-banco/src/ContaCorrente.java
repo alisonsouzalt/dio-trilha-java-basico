@@ -1,8 +1,5 @@
-import java.util.Locale;
-import java.util.Scanner;
-
 public class ContaCorrente extends Conta{
-    public ContaCorrente(Cliente cliente){
+    public ContaCorrente(Cliente cliente) {
         super(cliente);
     }
     @Override

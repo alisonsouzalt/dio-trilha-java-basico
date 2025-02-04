@@ -7,8 +7,6 @@ public class Main {
         Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
         Cliente cliente = new Cliente();
         Apresentacoes ap = new Apresentacoes();
-        List<Conta> listaDeContas = new ArrayList<>();
-        Banco banco = new Banco(listaDeContas);
         int escolha = 0;
         String texto;
         double valor = 0;
@@ -22,8 +20,7 @@ public class Main {
             cliente.setNome(texto);
             ContaCorrente cc = new ContaCorrente(cliente);
             ContaPoupanca cp = new ContaPoupanca(cliente);
-            listaDeContas.add(cc);
-            listaDeContas.add(cp);
+            String clinteT [] = {"GERENTE", texto};
             ap.contaCriada();
 
             while (true){
@@ -109,7 +106,9 @@ public class Main {
                     cp.imprimirExtrato();
                 }
                 else if (escolha == 5){
-                    banco.imprimirContas();
+                    for (int x=1; x<clinteT.length; x++){
+                        System.out.println("CLIENTE Nº: " + x + " - " + clinteT[x]+"\n");
+                    }
                 }
                 else if (escolha == 0){
                     System.out.println("Sistema finalizado!");
