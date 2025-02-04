@@ -10,6 +10,7 @@ public class Apresentacoes{
         System.out.println("2. Saque");
         System.out.println("3. Transferencia");
         System.out.println("4. Saldo");
+        System.out.println("5. Lista de Contas");
         System.out.println("0. Sair do sistema");
     }
     public void contaCriada(){

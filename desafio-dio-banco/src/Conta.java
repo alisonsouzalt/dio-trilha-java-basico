@@ -49,5 +49,9 @@ public abstract class Conta implements Iconta{
         System.out.println(String.format("Numero: %d", this.numero));
         System.out.println(String.format("Saldo: %.2f", this.saldo));
     }
+    @Override
+    public String toString() {
+        return "Titular: " + cliente.getNome() + ", Saldo: R$ " + saldo;
+    }
 
 }

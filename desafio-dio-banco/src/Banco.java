@@ -16,4 +16,10 @@ public class Banco {
     public void setNome(String nome) {
         this.nome = nome;
     }
+    public void imprimirContas() {
+        System.out.println("\nLista de Contas do Banco " + nome + ":");
+        for (Conta conta : contas) {
+          System.out.println(conta + nome);
+        }
+    }
 }
